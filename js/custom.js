@@ -97,7 +97,6 @@
 
 		$(".contactform").on("submit", function() {
 			$(".output_message").text("Sending...");
-			// rari inrv gljr wbnd
 			Email.send({
 				SecureToken: "4567e64c-d4fd-42bb-bfe2-23915e59c265",
 				To : 'abubakaribilal99@gmail.com',
