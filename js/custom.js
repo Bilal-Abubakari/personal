@@ -97,15 +97,17 @@
 
 		$(".contactform").on("submit", function() {
 			$(".output_message").text("Sending...");
-
 			Email.send({
-				SecureToken : "1da598b0-41dc-4320-8512-1c8c418f8c25",
+				SecureToken: "4567e64c-d4fd-42bb-bfe2-23915e59c265",
 				To : 'abubakaribilal99@gmail.com',
-				From : 'malti@ripplesfoundation.org',
-				Subject : document.getElementById( "subject" ),
-				Body : document.getElementById( "message" )
+				From : document.getElementById("email").value,
+				Subject : document.getElementById("subject").value,
+				Body : document.getElementById("message").value
 			}).then(
-			  message => alert(message)
+			  message => {
+				  alert(message);
+				  document.querySelector(".output_message").text("");
+			  }
 			);
 
 			return false;
