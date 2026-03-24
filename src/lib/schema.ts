@@ -10,7 +10,7 @@ export function generatePersonSchema() {
     sameAs: [
       siteConfig.links.github,
       siteConfig.links.linkedin,
-      siteConfig.links.twitter,
+      siteConfig.links.x,
     ],
     jobTitle: "Fullstack Software Engineer",
     worksFor: {
