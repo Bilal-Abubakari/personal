@@ -28,6 +28,7 @@ export interface Project {
   image?: string;
   link?: string;
   github?: string;
+  nda?: boolean;
 }
 
 export interface Skill {

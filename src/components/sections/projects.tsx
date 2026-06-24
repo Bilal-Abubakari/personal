@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, ArrowRight } from "lucide-react";
+import { ExternalLink, ArrowRight, ShieldCheck } from "lucide-react";
 import {
   Section,
   SectionHeader,
@@ -100,7 +100,7 @@ export function ProjectsSection() {
                   </div>
 
                   {/* Links */}
-                  <div className="mt-6 flex gap-3">
+                  <div className="mt-6 flex flex-wrap gap-3">
                     {project.link && (
                       <Button variant="outline" size="sm" asChild>
                         <a
@@ -124,6 +124,12 @@ export function ProjectsSection() {
                           Source
                         </a>
                       </Button>
+                    )}
+                    {project.nda && (
+                      <span className="inline-flex items-center gap-1.5 rounded-md border border-amber-300 bg-amber-50 px-2.5 py-1 text-xs font-medium text-amber-700 dark:border-amber-700 dark:bg-amber-950 dark:text-amber-400">
+                        <ShieldCheck className="h-3.5 w-3.5" />
+                        Protected by NDA
+                      </span>
                     )}
                   </div>
                 </CardContent>

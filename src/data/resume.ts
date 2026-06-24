@@ -213,7 +213,7 @@ export const projects: Project[] = [
       "Developed the Free-form Hub to provide engineers with advanced design and configuration tools.",
     impact:
       "Improved the accessibility of advanced design tools for industrial engineers.",
-    technologies: ["Angular", "TypeScript", "NX Monorepo"],
+    technologies: ["Angular", "TypeScript", "NX Monorepo", "Vue.js"],
     image: "/projects/project-2.jpg",
     link: "https://www.igus.de/free-form-hub",
   },
@@ -231,7 +231,71 @@ export const projects: Project[] = [
       "Connected 1000+ patients with healthcare providers, reducing travel time and improving care accessibility.",
     technologies: ["React", "Node.js", "WebRTC", "PostgreSQL", "Stripe"],
     image: "/projects/telemedicine.jpg",
-    link: "https://zomujo.vercel.app/",
+    link: "https://fornixlink.com",
+  },
+  {
+    title: "Café Fausse Web Application",
+    description:
+      "Full-stack fine-dining restaurant web application with reservation system, menu display, gallery, and newsletter signup.",
+    context:
+      "A demonstration of full-stack development skills applied to a real-world hospitality use case.",
+    problem:
+      "Restaurants need a polished, functional online presence with seamless reservation and customer engagement features.",
+    solution:
+      "Built a responsive full-stack app with React frontend, Flask backend, and PostgreSQL database, featuring a reservation system, menu display, gallery, and newsletter signup.",
+    impact:
+      "Delivered a production-deployed, feature-complete restaurant platform showcasing end-to-end full-stack development.",
+    technologies: ["React", "Flask", "PostgreSQL", "Python", "Vercel"],
+    image: "/projects/cafe-fausse.jpg",
+    link: "https://cafe-fausse-rho.vercel.app/",
+  },
+  {
+    title: "Static Malware Detector",
+    description:
+      "Machine learning web application for static malware detection on Windows PE files using ensemble ML models.",
+    context:
+      "Built for the Quantic MSSE Machine Learning Project to demonstrate practical ML application in cybersecurity.",
+    problem:
+      "Identifying malware in PE files traditionally requires dynamic analysis or manual reverse engineering, which is slow and resource-intensive.",
+    solution:
+      "Trained 7 machine learning models on the Brazilian Malware Dataset to classify PE .exe files as malware or goodware, serving the best-performing model (by CV AUC) via a Flask web application.",
+    impact:
+      "Delivered a production-deployed malware classifier with static analysis — no execution required — enabling fast, scalable threat detection.",
+    technologies: ["Python", "Flask", "scikit-learn", "Pandas", "NumPy", "Render"],
+    image: "/projects/malware-detector.jpg",
+    link: "https://machine-learning-based-static-malware-p2re.onrender.com/",
+  },
+  {
+    title: "BilalTech Policy RAG System",
+    description:
+      "Production-quality Retrieval-Augmented Generation system that answers employee questions about AI policies and procedures with source citations.",
+    context:
+      "BilalTech needed an intelligent, trustworthy way for employees to query internal AI policies and procedures.",
+    problem:
+      "Employees had difficulty finding accurate, cited answers from lengthy policy documents, with no guardrails or quality assurance.",
+    solution:
+      "Built a RAG pipeline with source citations, guardrails, LLM-as-judge evaluation, and GitHub Actions CI/CD for continuous quality monitoring.",
+    impact:
+      "Delivered production-ready AI assistant with verifiable answers, automated evaluation, and full CI/CD pipeline.",
+    technologies: ["Python", "LangChain", "OpenAI", "FAISS", "FastAPI", "GitHub Actions"],
+    image: "/projects/rag.jpg",
+    link: "https://bilaltech-policy-rag-1.onrender.com/",
+  },
+  {
+    title: "Landlord Management Platform (Deutsche Telekom)",
+    description:
+      "Enterprise platform for managing residential and commercial properties enrolled in Deutsche Telekom's fiber network infrastructure.",
+    context:
+      "Deutsche Telekom needed a centralised system to coordinate landlords and property owners across its expanding fiber rollout programme.",
+    problem:
+      "Managing thousands of properties from multiple landlords — each with unique contracts, enrollment statuses, and network readiness requirements — was fragmented and error-prone across disconnected tools.",
+    solution:
+      "Built a comprehensive landlord management system enabling end-to-end property onboarding, fiber enrollment tracking, contract management, and real-time status visibility across the Telekom network portfolio.",
+    impact:
+      "Streamlined property enrollment workflows across a large-scale national fiber rollout, reducing coordination overhead and improving landlord-operator communication for Deutsche Telekom.",
+    technologies: ["Angular", "TypeScript", "NX Monorepo", "REST APIs", "Docker"],
+    image: "/projects/landlord-management.jpg",
+    nda: true,
   },
   {
     title: "Enterprise E-commerce Platform",
@@ -255,6 +319,7 @@ export const projects: Project[] = [
       "Glue API",
     ],
     image: "/projects/ecommerce.jpg",
+    nda: true,
   },
   {
     title: "Assessment & Proctoring Platform",
@@ -270,6 +335,7 @@ export const projects: Project[] = [
       "Enabled secure remote assessments for 500+ trainees with 99% integrity compliance.",
     technologies: ["Angular", "TypeScript", "WebRTC", "Node.js", "PostgreSQL"],
     image: "/projects/assessment.jpg",
+    nda: true,
   },
   {
     title: "Hospital Booking System",
@@ -283,8 +349,24 @@ export const projects: Project[] = [
       "Implemented real-time booking system with WebSocket-based chat for instant patient-provider communication.",
     impact:
       "Reduced scheduling conflicts by 80% and improved patient satisfaction scores.",
-    technologies: ["React", "Node.js", "WebSockets", "MongoDB", "Socket.io"],
+    technologies: ["React", "Node.js", "WebSockets", "MongoDB", "Socket.io", "Vue.js"],
     image: "/projects/booking.jpg",
+  },
+  {
+    title: "UserInsights",
+    description:
+      "Research recruitment platform connecting researchers with prospective participants for interviews, surveys, and user studies.",
+    context:
+      "Research teams needed a structured, scalable way to source and manage participant samples for qualitative and quantitative studies.",
+    problem:
+      "Researchers spent excessive time manually recruiting participants, coordinating schedules, and distributing surveys — with no centralised platform to manage the full research pipeline.",
+    solution:
+      "Built a platform that allows researchers to define target participant profiles, schedule interviews, distribute surveys, and directly connect with a curated sample population — all in one place.",
+    impact:
+      "Significantly reduced participant recruitment time and streamlined end-to-end research workflows for research teams.",
+    technologies: ["Vue.js", "Node.js", "PostgreSQL", "TypeScript", "REST APIs"],
+    image: "/projects/userinsights.jpg",
+    nda: true,
   },
   {
     title: "Startup-Investor Platform",

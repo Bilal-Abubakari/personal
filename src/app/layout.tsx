@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Header, Footer } from "@/components/layout";
+import { HashScrollHandler } from "@/components/hash-scroll-handler";
 import { siteConfig } from "@/lib/constants";
 import { generatePersonSchema, generateWebsiteSchema } from "@/lib/schema";
 import "./globals.css";
@@ -105,6 +106,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
       >
         <ThemeProvider>
+          <HashScrollHandler />
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
